@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>400</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile_F">
+    <property name="title">
+     <string>File(&amp;F)</string>
+    </property>
+    <addaction name="actionOpenProject"/>
+   </widget>
+   <widget class="QMenu" name="menuLayer_L">
+    <property name="title">
+     <string>Layer(&amp;L)</string>
+    </property>
+    <widget class="QMenu" name="menu_geometrical_measurement">
+     <property name="title">
+      <string>  geometrical measurement</string>
+     </property>
+     <addaction name="actionpoint_geometry"/>
+     <addaction name="actionarea"/>
+     <addaction name="actionazimuthal"/>
+    </widget>
+    <addaction name="actionAddVectorLayer"/>
+    <addaction name="actionAddRasterLayer"/>
+    <addaction name="action_annotation_layer"/>
+    <addaction name="separator"/>
+    <addaction name="actionZoomOut"/>
+    <addaction name="actionZoom_In"/>
+    <addaction name="actionlabel_ON"/>
+    <addaction name="actionvector_symbol_change"/>
+    <addaction name="actionelevation_DTED_Layer"/>
+    <addaction name="menu_geometrical_measurement"/>
+    <addaction name="actionPanning"/>
+   </widget>
+   <widget class="QMenu" name="menuZoom_In">
+    <property name="title">
+     <string>Zoom In</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuZoom_Out">
+    <property name="title">
+     <string>Zoom Out</string>
+    </property>
+   </widget>
+   <addaction name="menuFile_F"/>
+   <addaction name="menuLayer_L"/>
+   <addaction name="menuZoom_In"/>
+   <addaction name="menuZoom_Out"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionOpenProject">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionAddVectorLayer">
+   <property name="text">
+    <string>Add Vector Layer</string>
+   </property>
+  </action>
+  <action name="actionAddRasterLayer">
+   <property name="text">
+    <string>Add Raster Layer</string>
+   </property>
+  </action>
+  <action name="action_annotation_layer">
+   <property name="text">
+    <string>Add  annotation layer</string>
+   </property>
+  </action>
+  <action name="actionplus">
+   <property name="text">
+    <string>plus</string>
+   </property>
+  </action>
+  <action name="actionMinus">
+   <property name="text">
+    <string>Minus</string>
+   </property>
+  </action>
+  <action name="actionZoomOut">
+   <property name="text">
+    <string>Zoom Out</string>
+   </property>
+  </action>
+  <action name="actionZoom_In">
+   <property name="text">
+    <string>Zoom In</string>
+   </property>
+  </action>
+  <action name="actionlabel_ON">
+   <property name="text">
+    <string>label_ON</string>
+   </property>
+  </action>
+  <action name="actionvector_symbol_change">
+   <property name="text">
+    <string>vector_symbol_change</string>
+   </property>
+  </action>
+  <action name="actionelevation_DTED_Layer">
+   <property name="text">
+    <string>elevation_DTED_Layer</string>
+   </property>
+  </action>
+  <action name="actionpoint_geometry">
+   <property name="text">
+    <string>line geometry</string>
+   </property>
+  </action>
+  <action name="actionarea">
+   <property name="text">
+    <string>area geometry</string>
+   </property>
+  </action>
+  <action name="actionazimuthal">
+   <property name="text">
+    <string>azimuthal geometry</string>
+   </property>
+  </action>
+  <action name="actionPanning">
+   <property name="text">
+    <string>Panning</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
